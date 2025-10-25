@@ -1,0 +1,142 @@
+Starting C/RTL cosimulation ...
+C:/Xilinx/Vivado/2019.2/bin/vivado_hls.bat C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/cosim.tcl
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'willi' on host 'liamsshitbox' (Windows NT_amd64 version 6.2) on Fri Oct 24 21:15:15 -0400 2025
+INFO: [HLS 200-10] In directory 'C:/Users/willi/Documents/Schoolwork/Vivado'
+Sourcing Tcl script 'C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/cosim.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/willi/Documents/Schoolwork/Vivado/sobel'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling sobel_filter_tb.cpp_pre.cpp.tb.cpp
+   Compiling sobel_filter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel_rgb_axis.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Note: loaded 610x540 (testbench works for any size, not just 512x512).
+Sobel stats: min=0 max=255 mean=41.256
+Wrote C:/Users/willi/Documents/Schoolwork/Vivado/sobel_resource/sobel_output.ppm, open it with any viewer that supports PPM.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\willi\Documents\Schoolwork\Vivado\sobel\solution1\sim\verilog>set PATH= 
+
+C:\Users\willi\Documents\Schoolwork\Vivado\sobel\solution1\sim\verilog>call C:/Xilinx/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_sobel_rgb_axis_top glbl -prj sobel_rgb_axis.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s sobel_rgb_axis  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sobel_rgb_axis_top glbl -prj sobel_rgb_axis.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s sobel_rgb_axis 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/AESL_axi_s_in_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_axis
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/AESL_axi_s_out_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_axis
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/regslice_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regslice_both
+INFO: [VRFC 10-311] analyzing module regslice_forward
+INFO: [VRFC 10-311] analyzing module regslice_reverse
+INFO: [VRFC 10-311] analyzing module regslice_both_w1
+INFO: [VRFC 10-311] analyzing module regslice_forward_w1
+INFO: [VRFC 10-311] analyzing module regslice_reverse_w1
+INFO: [VRFC 10-311] analyzing module ibuf
+INFO: [VRFC 10-311] analyzing module obuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_sobel_rgb_axis_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis_libkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_libkb_ram
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_libkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis_maeOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_maeOg_DSP48_1
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_maeOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis_mafYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_mafYi_DSP48_2
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_mafYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis_mudEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_mudEe_DSP48_0
+INFO: [VRFC 10-311] analyzing module sobel_rgb_axis_mudEe
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sobel_rgb_axis_libkb_ram
+Compiling module xil_defaultlib.sobel_rgb_axis_libkb(DataWidth=8...
+Compiling module xil_defaultlib.sobel_rgb_axis_mudEe_DSP48_0
+Compiling module xil_defaultlib.sobel_rgb_axis_mudEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.sobel_rgb_axis_maeOg_DSP48_1
+Compiling module xil_defaultlib.sobel_rgb_axis_maeOg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.sobel_rgb_axis_mafYi_DSP48_2
+Compiling module xil_defaultlib.sobel_rgb_axis_mafYi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.ibuf(W=25)
+Compiling module xil_defaultlib.obuf(W=25)
+Compiling module xil_defaultlib.regslice_both(DataWidth=24)
+Compiling module xil_defaultlib.ibuf(W=4)
+Compiling module xil_defaultlib.obuf(W=4)
+Compiling module xil_defaultlib.regslice_both(DataWidth=3)
+Compiling module xil_defaultlib.ibuf(W=2)
+Compiling module xil_defaultlib.obuf(W=2)
+Compiling module xil_defaultlib.regslice_both(DataWidth=1)
+Compiling module xil_defaultlib.sobel_rgb_axis
+Compiling module xil_defaultlib.fifo(DEPTH=329400,WIDTH=24)
+Compiling module xil_defaultlib.fifo(DEPTH=329400,WIDTH=3)
+Compiling module xil_defaultlib.fifo(DEPTH=329400,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_in_axis
+Compiling module xil_defaultlib.AESL_axi_s_out_axis
+Compiling module xil_defaultlib.apatb_sobel_rgb_axis_top
+Compiling module work.glbl
+Built simulation snapshot sobel_rgb_axis
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/xsim.dir/sobel_rgb_axis/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 24 21:15:44 2025...
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/sobel_rgb_axis/xsim_script.tcl
+# xsim {sobel_rgb_axis} -autoloadwcfg -tclbatch {sobel_rgb_axis.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source sobel_rgb_axis.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "3297265000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 3297305 ns : File "C:/Users/willi/Documents/Schoolwork/Vivado/sobel/solution1/sim/verilog/sobel_rgb_axis.autotb.v" Line 477
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 224.059 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 24 21:16:07 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'out_axis_V_data_V', possible cause: There are uninitialized variables in the C design.Note: loaded 610x540 (testbench works for any size, not just 512x512).
+
+Sobel stats: min=0 max=255 mean=41.2823
+Wrote C:/Users/willi/Documents/Schoolwork/Vivado/sobel_resource/sobel_output.ppm, open it with any viewer that supports PPM.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Finished C/RTL cosimulation.
